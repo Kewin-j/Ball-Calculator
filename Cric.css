@@ -1,0 +1,53 @@
+body {
+    text-align:center;
+    margin: 0px;
+    background-image: url("C:\\Users\\Kewin.jk\\Downloads\\kamil.jpg");
+
+}
+
+#score {
+    font-size: 24px;
+    margin-bottom: 20px;
+    
+}
+button {
+    font-size: 18px;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+} 
+
+#All {
+    margin: 10px;
+    border-radius: 30px;
+    border-style: inset;
+    font-style: italic;
+    height: 300px;
+    width: 500px;
+    margin-left: 385px;
+    margin-top: 15%;
+    background-color: white;
+    margin-top: 50px;
+    font-style:italic;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+#sa{
+     background-color: rgb(20, 20, 188);
+     color: white;
+}
+#sb{
+    background-color:rgb(255, 16, 16);
+    color: white;
+}
+#sc{
+    background-color: rgb(5, 159, 5);
+    color: white;
+}
+#bb{
+    text-align: center;
+}

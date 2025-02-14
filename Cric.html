@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Over and Ball Calculator</title>
+    <link rel="stylesheet" href="Cric.css">
+        
+    </head>
+<body>
+    <h1>CRICKET</h1>
+    <div id="All">
+    <h2> Over and Ball Calculator</h2>
+
+    <div id="score">Overs: <span id="overs">0</span> . Balls: <span id="balls">0</span></div>
+    
+    <button id="sa" onclick="reduceBall()">Reduce</button>
+    <button id="sb" onclick="resetScore()">Reset</button>
+    <button id="sc" onclick="addBall()">Add</button>
+    <br>
+    <p>Let's Play</p>
+    
+    </div>
+    
+    <script>
+        var overs = 0;
+        var balls = 1;
+
+        function updateScore() {
+            document.getElementById('overs').innerText = overs;
+            document.getElementById('balls').innerText = balls;
+        }
+
+        function addBall() {
+            if (balls < 6) {
+                balls++;
+            } else {
+                balls = 1;
+                overs++;
+            }
+            updateScore();
+         }
+
+function reduceBall() {
+    if (overs > 0 || balls > 1) {
+        if (balls > 1) {
+            balls--;
+        } else {
+            overs--;
+            balls = 6;
+        }
+        updateScore();
+    }
+}
+
+function resetScore() {
+    overs = 0;
+    balls = 0;
+    updateScore();
+}
+</script>
+</div>
+</body>
+</html>
+
